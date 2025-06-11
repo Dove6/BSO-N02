@@ -5,7 +5,6 @@ COPY ./files/ /
 
 ENV USER_PASSWORD=123456
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 22/tcp
-CMD /usr/sbin/sshd -D
-
+CMD ["/usr/sbin/sshd", "-D"]
