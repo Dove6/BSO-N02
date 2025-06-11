@@ -12,6 +12,11 @@ mkdir -p /var/run/sshd
 # Key generation
 ls /etc/ssh/ssh_host_* >/dev/null 2>&1 &&echo "Keys is found" ||echo "Key generation." && ssh-keygen -A
 
+# Config
+sed -i 's/#PubkeyAuthentication.*$/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin.*$/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/#PubkeyAuthentication.*$/PubkeyAuthentication yes/' /etc/ssh/sshd_config
+
 # Environment variables that are used if not empty:
 # USER_PASSWORD
 
