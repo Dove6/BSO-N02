@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 INPUT_FILE="$1"
 OUTPUT_CSV="$2"
