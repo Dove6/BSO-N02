@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # source: https://github.com/devdotnetorg/docker-openssh-server/blob/62a43cc3b9b2a89fcb382ba0ee8244c8aa4fcd18/copyables/entrypoint.sh
 
 echo "Start entrypoint.sh"
