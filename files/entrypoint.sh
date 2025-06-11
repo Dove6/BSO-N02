@@ -25,5 +25,4 @@ else
 fi
 
 echo "Run sshd"
-
-exec "$@"
+exec /usr/sbin/sshd -D -p ${SSH_PORT}
